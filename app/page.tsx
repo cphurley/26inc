@@ -9,7 +9,7 @@ export default function Home() {
           <Image src="/logo.png" alt="TwentySix Inc" width={180} height={30} priority />
           <div className="hidden gap-6 text-[13px] font-medium tracking-wide text-navy/80 sm:flex">
             <a href="#services" className="transition-colors hover:text-navy">Services</a>
-            <a href="#experience" className="transition-colors hover:text-navy">Experience</a>
+            <a href="#experience" className="transition-colors hover:text-navy">Projects</a>
             <a href="#about" className="transition-colors hover:text-navy">About</a>
             <a href="#contact" className="transition-colors hover:text-navy">Contact</a>
           </div>
@@ -89,51 +89,59 @@ export default function Home() {
       {/* Experience */}
       <section id="experience" className="scroll-mt-14 bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-2xl font-bold text-[#114571] sm:text-3xl">Experience</h2>
+          <h2 className="text-2xl font-bold text-[#114571] sm:text-3xl">Select Project Highlights</h2>
           <div className="mt-2 h-1 w-12 rounded-full bg-[#1a5a94]" />
-          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-gray-600">
-            Select engagements delivered by TwentySix Inc since 2019.
-          </p>
 
           <div className="mt-10 space-y-0">
             {[
               {
-                industry: "M&A Project Management",
-                title: "Acquisition & Disposition Programs",
-                detail: "Managed sign-to-close process for multiple acquisitions and dispositions for a top-10 mortgage servicer. Provided project management for platform migration, system integration, and operational implementation post-close.",
+                industry: "Top-5 Mortgage Servicer",
+                title: "M&A Project Management / Regulatory & Compliance",
+                details: [
+                  { subtitle: "M&A Project Management", text: "Managed sign-to-close process for multiple acquisitions and dispositions. Provided project management for platform migration, system integration, and operational implementation post-close." },
+                  { subtitle: "Regulatory & Compliance Advisory", text: "Provided ongoing advisory support across regulatory response, compliance analysis, inter-company pricing reviews, and risk reporting for senior management and the board." },
+                ],
               },
               {
-                industry: "Private Equity",
-                title: "Investor Portal & CRM Implementation",
-                detail: "Highly customized Salesforce implementation for sales, investor relations, marketing, operations, and accounting. The system became the backbone for sales and fundraising, onboarding and subscriptions, investor relations, and the investor portal.",
+                industry: "Global Fortune 500 Manufacturer",
+                title: "Predictive Modeling & Analytics",
+                detail: "Designed and built predictive scoring models for high-stakes civil litigation, leveraging large-scale research surveys and statistical modeling to evaluate jurors on liability and damages. Provided jury selection, case value estimation, venue analysis, and trial strategy insights across billion-dollar disputes.",
               },
               {
-                industry: "Private Equity",
-                title: "Treasury & Cloud Architecture",
-                detail: "Designed and implemented a new cloud architecture for treasury services including the setup, review, and initiation of distribution wires across all funds.",
-              },
-              {
-                industry: "Data & Analytics",
-                title: "Predictive Modeling for Litigation",
-                detail: "Designed and built predictive selection models for high-stakes civil litigation. Performed analytics on both plaintiff and defense cases ranging from low millions to billion-dollar disputes across multiple national engagements.",
-              },
-              {
-                industry: "Web3 / Blockchain",
-                title: "Blockchain Data Analytics",
+                industry: "Web3/Blockchain Startup",
+                title: "On-Chain Data Analytics",
                 detail: "Performed data analytics on Web3 projects leveraging on-chain blockchain data to surface insights on user behavior, transaction patterns, and platform performance.",
+              },
+              {
+                industry: "$25B+ Private Equity Firm",
+                title: "Investor Portal Enhancements",
+                detail: "Continued work from prior CIO role, leading enhancements to the firm's investor portal including front-end improvements and back-end data processing to ensure completeness and accuracy of investor reporting, capital account statements, and distribution workflows. Transitioned institutional knowledge built up over prior years to the Kayne Anderson IT team.",
               },
             ].map((p, i) => (
               <div key={i} className="group relative flex gap-6 py-6 sm:gap-10">
                 {/* Timeline line + dot */}
                 <div className="flex flex-col items-center">
                   <div className="h-3 w-3 rounded-full border-2 border-[#1a5a94] bg-white group-hover:bg-[#1a5a94] transition-colors" />
-                  {i < 4 && <div className="w-px flex-1 bg-gray-200" />}
+                  {i < 3 && <div className="w-px flex-1 bg-gray-200" />}
                 </div>
                 {/* Content */}
                 <div className="-mt-1 flex-1 pb-2">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-[#2e86c1]">{p.industry}</p>
-                  <h3 className="mt-1 text-[15px] font-bold text-gray-900">{p.title}</h3>
-                  <p className="mt-1.5 max-w-xl text-[13px] leading-relaxed text-gray-500">{p.detail}</p>
+                  <h3 className="text-[17px] font-bold text-[#114571]">{p.industry}</h3>
+                  {p.detail ? (
+                    <>
+                      <p className="mt-1 text-[13px] font-medium text-[#2e86c1]">{p.title}</p>
+                      <p className="mt-1.5 max-w-xl text-[13px] leading-relaxed text-gray-500">{p.detail}</p>
+                    </>
+                  ) : (
+                    <div className="mt-1.5 space-y-3">
+                      {p.details?.map((d, j) => (
+                        <div key={j}>
+                          <p className="text-[13px] font-medium text-[#2e86c1]">{d.subtitle}</p>
+                          <p className="mt-1 max-w-xl text-[13px] leading-relaxed text-gray-500">{d.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
