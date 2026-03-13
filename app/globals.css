@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-navy: #114571;
+  --color-navy-light: #1a5a94;
+  --color-navy-dark: #0d3557;
+  --color-slate: #f8fafc;
+  --color-slate-200: #e2e8f0;
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #1e293b;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Subtle grain overlay for hero */
+.hero-gradient {
+  background: linear-gradient(135deg, #0d3557 0%, #114571 40%, #1a5a94 100%);
+}
+
+/* Modern card hover */
+.service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(17, 69, 113, 0.1);
+}
+
+/* Fade-in for sections */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out both;
 }
