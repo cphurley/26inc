@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "TwentySix Inc | Consulting",
   description:
     "Boutique consulting firm specializing in technology, operations, and project management for financial services.",
+  icons: {
+    icon: "/favicon.jpg",
+  },
 };
 
 export default function RootLayout({

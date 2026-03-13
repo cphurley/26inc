@@ -27,7 +27,10 @@ export default function Home() {
         {/* Subtle light flare */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_20%,rgba(255,255,255,0.08)_0%,transparent_60%)]" />
         <div className="relative mx-auto max-w-6xl px-6 pt-24 sm:pt-32 pb-4 sm:pb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#5bb8f5]/80">
+          <p className="text-[13px] font-bold uppercase tracking-[0.25em] text-white/90">
+            TwentySix Incorporated
+          </p>
+          <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#5bb8f5]/80">
             25+ Years Experience &middot; Results-Driven &middot; Boutique Consulting
           </p>
           <h1 className="mt-5 max-w-2xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
