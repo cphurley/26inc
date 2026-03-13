@@ -26,36 +26,44 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(13,53,87,0.92)_0%,rgba(17,69,113,0.88)_40%,rgba(26,90,148,0.85)_100%)]" />
         {/* Subtle light flare */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_20%,rgba(255,255,255,0.08)_0%,transparent_60%)]" />
-        <div className="relative mx-auto max-w-6xl px-6 pt-20 sm:pt-28">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
-            Consulting &middot; Technology &middot; Strategy
+        <div className="relative mx-auto max-w-6xl px-6 pt-24 sm:pt-32 pb-4 sm:pb-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#5bb8f5]/80">
+            25+ Years Experience &middot; Results-Driven &middot; Boutique Consulting
           </p>
-          <h1 className="mt-4 max-w-lg text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
-            Bridging Business
-            <span className="text-white/40"> & </span>
-            Technology
+          <h1 className="mt-5 max-w-2xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Strategy. Execution.
+            <br />
+            <span className="bg-[linear-gradient(90deg,#5bb8f5,#a8d8ff)] bg-clip-text text-transparent">Delivery.</span>
           </h1>
-          <p className="mt-4 max-w-md text-[15px] leading-relaxed text-white/70">
-            Boutique consulting delivering technology leadership, operational
-            improvement, and strategic project management for complex organizations.
+          <p className="mt-6 max-w-lg text-base leading-relaxed text-white/70 sm:text-lg">
+            Results-oriented boutique consulting with deep expertise across technology,
+            operations, finance, and project management — from strategy through execution.
           </p>
-          <a
-            href="#contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-[13px] font-semibold text-navy transition-all hover:bg-white/90 hover:shadow-lg"
-          >
-            Get in Touch
-            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-          </a>
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-bold text-[#0d3557] transition-all hover:bg-white/90 hover:shadow-lg hover:shadow-white/10"
+            >
+              Get in Touch
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </a>
+            <a
+              href="#services"
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white/80 transition-all hover:border-white/40 hover:text-white"
+            >
+              View Services
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Services */}
       <section id="services" className="scroll-mt-14 bg-[#f0f4f8] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-navy/50">Services</h2>
-          <div className="mt-1 h-px w-10 bg-navy/20" />
+          <h2 className="text-2xl font-bold text-[#114571] sm:text-3xl">Services</h2>
+          <div className="mt-2 h-1 w-12 rounded-full bg-[#1a5a94]" />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { title: "Technology Strategy", desc: "CIO-level guidance on platform selection, vendor evaluation, data architecture, and technology roadmaps.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" /> },
@@ -81,8 +89,8 @@ export default function Home() {
       {/* Experience */}
       <section id="experience" className="scroll-mt-14 bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-navy/50">Experience</h2>
-          <div className="mt-1 h-px w-10 bg-navy/20" />
+          <h2 className="text-2xl font-bold text-[#114571] sm:text-3xl">Experience</h2>
+          <div className="mt-2 h-1 w-12 rounded-full bg-[#1a5a94]" />
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-gray-600">
             Select engagements delivered by TwentySix Inc since 2019.
           </p>
@@ -147,24 +155,33 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">About</h2>
-              <div className="mt-1 h-px w-10 bg-white/20" />
+              <h2 className="text-2xl font-bold text-white sm:text-3xl">About</h2>
+              <div className="mt-2 h-1 w-12 rounded-full bg-[#5bb8f5]" />
               <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-white/70">
                 <p>
                   <span className="font-semibold text-white">Christopher Hurley</span> is
-                  the founder and Managing Director of TwentySix Incorporated. He holds a
-                  B.S. in Chemical Engineering from Princeton University and brings over 25
-                  years of experience across technology, accounting, operations, and project
-                  management.
+                  the founder, Managing Director, and lead consultant at TwentySix
+                  Incorporated. Chris personally leads every engagement, bringing over 25
+                  years of hands-on experience across technology, accounting, operations,
+                  and project management — supported by a trusted network of associates
+                  with expertise across finance, design and development, data analysis,
+                  and project management.
                 </p>
                 <p>
-                  Before founding TwentySix Inc in 2019, Chris served as Chief Information
+                  Since founding TwentySix Inc in 2019, Chris has delivered engagements
+                  spanning M&amp;A project management, CRM and investor portal implementations,
+                  cloud treasury architecture, predictive litigation modeling, and blockchain
+                  data analytics — serving clients across the private equity, mortgage,
+                  legal, and financial services industries.
+                </p>
+                <p>
+                  Previously, Chris served as Chief Information
                   Officer at Kayne Anderson Capital Advisors, a $25B+ alternative asset
-                  manager, where he led an 8-person technology team responsible for
-                  back-office systems across accounting, operations, investor relations, and
-                  treasury. Prior to that, he ran CPH Consulting Services for seven years,
-                  delivering CRM implementations and technology advisory for large financial
-                  institutions.
+                  manager, where he led a technology team responsible for
+                  data and systems across key functions including accounting, operations,
+                  investor relations, and treasury. Prior to that, he founded CPH Consulting Services (2009–2016),
+                  providing technology implementation, project management, operations, and
+                  accounting consulting for banking and private equity clients.
                 </p>
                 <p>
                   Chris began his career at PricewaterhouseCoopers, rising from consultant to
@@ -173,9 +190,11 @@ export default function Home() {
                   IndyMac Bank, managing complex loan accounting, derivatives, and regulatory
                   reporting.
                 </p>
+                <p className="text-white/50">
+                  B.S. Chemical Engineering, Princeton University
+                </p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {[
-                    "Princeton University — B.S. Chemical Engineering",
                     "SQL & Data Analysis",
                     "Project Management",
                     "Financial Reporting & GAAP",
@@ -196,7 +215,7 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="scroll-mt-14 bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-6 text-center">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-navy/50">Contact</h2>
+          <h2 className="text-2xl font-bold text-[#114571] sm:text-3xl">Contact</h2>
           <p className="mt-4 text-2xl font-bold text-gray-900">Let&apos;s work together.</p>
           <p className="mx-auto mt-3 max-w-md text-[15px] leading-relaxed text-gray-500">
             Interested in a conversation? Reach out directly.
