@@ -31,7 +31,7 @@ export default function Home() {
             TwentySix Incorporated
           </p>
           <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#5bb8f5]/80">
-            25+ Years Experience &middot; Results-Driven &middot; Boutique Consulting
+            25+ Years Experience &middot; Results-Driven Advice &middot; Boutique Consulting
           </p>
           <h1 className="mt-5 max-w-2xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Strategy. Execution.
@@ -40,7 +40,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-white/70 sm:text-lg">
             Founded in 2019 as the continuation of a long independent consulting career,
-            TwentySix Incorporated delivers hands-on expertise across technology, operations,
+            TwentySix Incorporated provides hands-on expertise across technology, operations,
             finance, and project management for clients in financial services and beyond.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -92,7 +92,7 @@ export default function Home() {
               {
                 industry: "$25B+ Private Equity Firm",
                 title: "Investor Portal Enhancements",
-                detail: "Continued work from prior CIO role, leading enhancements to the firm's investor portal including front-end improvements and back-end data processing to ensure completeness and accuracy of investor reporting, capital account statements, and distribution workflows. Transitioned institutional knowledge built up over prior years to the Kayne Anderson IT team.",
+                detail: "Continued work from prior CIO role, leading enhancements to the firm's investor portal. Designed and executed front-end improvements and back-end data processing innovations to ensure completeness and accuracy of investor reporting, capital account statements, and distribution workflows.",
               },
             ].map((p, i) => (
               <div key={i} className="group relative flex gap-6 py-6 sm:gap-10">
@@ -135,9 +135,9 @@ export default function Home() {
             {[
               { title: "Technology Strategy & Implementation", desc: "CIO-level guidance on platform selection, vendor evaluation, data architecture, and technology roadmaps — through hands-on implementation, system configuration, and go-live support.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" /> },
               { title: "Project Management", desc: "End-to-end management of complex initiatives — system implementations, integrations, and multi-year programs.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" /> },
-              { title: "Data & Analytics", desc: "Data modeling, reporting design, warehouse strategy, and translating business needs into data-driven solutions.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /> },
+              { title: "Data & Analytics", desc: "Data modeling, reporting design, warehouse strategy, and translation of business needs into data-driven solutions.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /> },
               { title: "Operations & Accounting", desc: "Process improvement, operational accounting, financial reporting, and back-office optimization.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" /> },
-              { title: "Regulatory & Compliance", desc: "Risk framework design, compliance advisory, privacy policy development, and regulatory interactions.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /> },
+              { title: "Regulatory & Compliance", desc: "Compliance advisory, regulatory response support, risk reporting, and policy review.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /> },
               { title: "M&A Integration", desc: "Acquisition due diligence, platform integration, TSA negotiation, and post-close operational support.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /> },
             ].map((s) => (
               <div key={s.title} className="group relative overflow-hidden rounded-xl bg-[linear-gradient(135deg,#0d3557_0%,#114571_40%,#1a5a94_100%)] p-6 shadow-lg shadow-navy/20 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/30">
@@ -191,8 +191,8 @@ export default function Home() {
                   Officer at Kayne Anderson Capital Advisors, a $25B+ alternative asset
                   manager, where he led a technology team responsible for
                   data and systems across key functions including accounting, operations,
-                  investor relations, and treasury. Prior to that, he founded CPH Consulting Services (2009–2016),
-                  providing technology implementation, project management, operations, and
+                  investor relations, and treasury. Prior to that, he founded and ran CPH Consulting Services LLC, which provided
+                  technology implementation, project management, operations, and
                   accounting consulting for banking and private equity clients.
                 </p>
                 <p>
@@ -202,8 +202,11 @@ export default function Home() {
                   IndyMac Bank, managing complex loan accounting, derivatives, and regulatory
                   reporting.
                 </p>
-                <p className="text-white/50">
-                  B.S. Chemical Engineering, Princeton University
+                <p>
+                  Christopher earned a B.S.E. in Chemical Engineering with a minor in
+                  Engineering Management Systems from Princeton University in 1999. In 2006, while at
+                  PwC, he completed additional coursework in Accounting,
+                  Business Law, and Federal Taxation.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {[
