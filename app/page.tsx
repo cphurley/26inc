@@ -181,10 +181,10 @@ export default function Home() {
                 </p>
                 <p>
                   Since founding TwentySix Inc in 2019, Chris has delivered engagements
-                  spanning M&amp;A project management, CRM and investor portal implementations,
-                  cloud treasury architecture, predictive litigation modeling, and blockchain
-                  data analytics — serving clients across the private equity, mortgage,
-                  legal, and financial services industries.
+                  spanning M&amp;A project management, regulatory and privacy advisory,
+                  predictive litigation modeling, and blockchain data analytics —
+                  serving clients across the private equity, mortgage, legal, and
+                  financial services industries.
                 </p>
                 <p>
                   Previously, Chris served as Chief Information
