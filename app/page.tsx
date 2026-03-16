@@ -138,7 +138,7 @@ export default function Home() {
               { title: "Data & Analytics", desc: "Data modeling, reporting design, warehouse strategy, and translation of business needs into data-driven solutions.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /> },
               { title: "Operations & Accounting", desc: "Process improvement, operational accounting, financial reporting, and back-office optimization.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" /> },
               { title: "Regulatory & Compliance", desc: "Compliance advisory, regulatory response support, risk reporting, and policy review.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /> },
-              { title: "M&A Integration", desc: "Acquisition due diligence, platform integration, TSA negotiation, and post-close operational support.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /> },
+              { title: "M&A Integration", desc: "Acquisition due diligence, platform integration, TSA design and administration, and post-close operational support.", icon: <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" /> },
             ].map((s) => (
               <div key={s.title} className="group relative overflow-hidden rounded-xl bg-[linear-gradient(135deg,#0d3557_0%,#114571_40%,#1a5a94_100%)] p-6 shadow-lg shadow-navy/20 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/30">
                 <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
@@ -208,18 +208,34 @@ export default function Home() {
                   PwC, he completed additional coursework in Accounting,
                   Business Law, and Federal Taxation.
                 </p>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {[
-                    "SQL & Data Analysis",
-                    "Project Management",
-                    "Financial Reporting & GAAP",
-                    "Salesforce / CRM",
-                    "Azure / AWS",
-                  ].map((tag) => (
-                    <span key={tag} className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium text-white/50">
-                      {tag}
-                    </span>
-                  ))}
+                <div className="space-y-3 pt-4">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">Core Competencies</p>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Project Management",
+                      "Process Improvement",
+                      "M&A Advisory",
+                      "IT Strategy & Implementation",
+                      "Technical Writing",
+                      "Vendor & Tool Analysis",
+                    ].map((tag) => (
+                      <span key={tag} className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium text-white/50">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "SQL & Data Analysis",
+                      "AI-Augmented Development",
+                      "Excel & Data Modeling",
+                      "Needs Assessment & Scoping",
+                    ].map((tag) => (
+                      <span key={tag} className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium text-white/50">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
